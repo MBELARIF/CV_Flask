@@ -4,7 +4,7 @@ from flask import json
 from urllib.request import urlopen
 import sqlite3
 
-@app = Flask(name) #creating flask app name
+app = Flask(__name__) #creating flask app name
 
 @app.route('/consultationn')
 def consultation():
