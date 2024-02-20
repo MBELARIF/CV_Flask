@@ -11,7 +11,7 @@ def consultation():
    return render_template("consult.html")
 
 @app.route('/lecture/')
-#Création d'une nouvelle route pour la lecture de la BDD
+# Création d'une nouvelle route pour la lecture de la BDD
 @app.route("/consultation/")
 def ReadBDD():
     conn = sqlite3.connect('database.db')
