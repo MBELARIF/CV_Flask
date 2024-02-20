@@ -1,7 +1,3 @@
-from flask import Flask, render_template, jsonify
-import json
-import sqlite3
-
 from flask import Flask, render_template_string, render_template, jsonify
 from flask import Flask, render_template, request, redirect
 from flask import json
