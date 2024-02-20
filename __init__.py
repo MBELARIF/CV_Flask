@@ -28,9 +28,6 @@ def resume_2():
 def resume_template():
     return render_template("resume_template.html")
 
-if __name__ == "__main__":
-    app.run(debug=True)  # Ajout de `debug=True` pour faciliter le débogage
-
 @app.route('/post/<int:post_id>')
 def get_post(post_id):
     conn = get_db_connection()
@@ -46,3 +43,8 @@ def get_post(post_id):
     
     # Renvoie la réponse JSON
     return jsonify(post=json_post)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)  # Ajout de `debug=True` pour faciliter le débogage
+
